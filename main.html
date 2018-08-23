@@ -5,11 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .box{
+      width:200px;
+      height:200px;
+      background-color: red;
+      animation: 3s scaleAndRotateSquare  ease-in-out infinite;
+
+    }
+    @keyframes scaleAndRotateSquare {
+      0%{
+        transform: none;
+      }
+      25%{
+        transform: rotate(1turn) scale(.5,.5);
+        background-color: black;
+      }
+      50%{
+        transform: none;
+        background-color: red;
+      }
+      75%{
+        transform: rotate3d(1turn) scale3d(0.5,0.5,0.5);
+        background-color: blue;
+      }
+      100%{
+        transform: none;
+        background-color: red;
+      }
+    }
+
+  </style>
+
 </head>
 <body>
-  <h1>hello!</h1>
-  <div>
-    
-  </div>
+ <div class="box">
+
+ </div>
 </body>
 </html>
